@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#heart-container {
+    position: relative;
+    width: 400px; /* Adjust as needed */
+    height: 400px; /* Adjust as needed */
+}
+
+.love-text {
+    position: absolute;
+    color: white; /* Or any other color you prefer */
+    font-family: sans-serif;
+    font-size: 14px; /* Adjust text size */
+    white-space: nowrap;
+    opacity: 0; /* Start invisible */
+    animation: fadeAndMove 4s forwards; /* Animation name, duration, fill mode */
+}
+
+/* Optional: Define animation if you want a basic fade in and out */
+@keyframes fadeAndMove {
+    0% { opacity: 0; transform: scale(0.5); }
+    20% { opacity: 1; transform: scale(1); }
+    80% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0; transform: scale(0.5); }
+}
